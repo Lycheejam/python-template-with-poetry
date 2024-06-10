@@ -1,4 +1,5 @@
-# NOTE: https://docs.github.com/en/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions#enable-auto-merge-on-a-pull-request
+---
+# NOTE: https://docs.github.com/en/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions
 # NOTE: https://moneyforward-dev.jp/entry/2022/12/16/dependabot-automation/
 name: Dependabot auto-merge
 on: pull_request
