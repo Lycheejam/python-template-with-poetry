@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "[github actions]"
+      include: "scope"
+    labels:
+      - "github actions"
+      - "dependencies"
+
+  - package-ecosystem: "pip" # NOTE: poetry
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    ignore:
+      - dependency-name: "python"
+        update-types: ["version-update:semver-major"]
+    commit-message:
+      prefix: "[poetry]"
+      include: "scope"
+    labels:
+      - "poetry"
+      - "dependencies"
